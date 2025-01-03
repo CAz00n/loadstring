@@ -93,7 +93,7 @@ local GetClosestPlayer = function() -- // Optimized GetClosestPlayer i believe?
     return ClosestPlayer
 end
  
-Mouse.KeyDown:Connect(function(key) -- Get our closest player (toggle)
+Mouse.KeyDown:Connect(function(keybind)
     if key == Aimbot.Keybind:lower() then
         Player = not Player and GetClosestPlayer() or nil
     end
